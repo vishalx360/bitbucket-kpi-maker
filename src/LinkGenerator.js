@@ -1,4 +1,29 @@
-const params  = require("../config.json")
+const config = require("../config.json")
+
+const params = {
+  "fields": [
+      "values.title",
+      "values.destination.branch.name",
+      "values.destination.repository.name",
+      "values.closed_on",
+      "values.links.html.href"
+  ],
+  "page": 1,
+  "pagelen": 80,
+  "state": "MERGED",
+  "projectUUID": "",
+  "accountID": ""
+}
+const decodedURL = new URL (decodeURI(config.url))
+
+const projectUUID = decodedURL.searchParams.get("project").split("{")[1].split("}")[0]
+const accountID = decodedURL.searchParams.get("author")
+
+params.accountID = accountID
+params.projectUUID = projectUUID
+
+console.log(params);
+
 
 function generateBitbucketURL(params) {
   const baseURL =
@@ -22,6 +47,6 @@ function generateBitbucketURL(params) {
 }
 
 
-const generatedURL = generateBitbucketURL(params);
-console.log(generatedURL);
+// const generatedURL = generateBitbucketURL(params);
+// console.log(generatedURL);
 

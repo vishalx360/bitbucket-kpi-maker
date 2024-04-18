@@ -19,7 +19,7 @@ This tool generates CSV files for pull requests made by a single user. You can i
     npm install
     ```
 
-3. **Configure Settings**: Open the `config.json` file and add the necessary information as per your requirements.
+3. **Configure Settings**: Open the `config.json` file and add the url for bitbucket pullrequest with project selected and author selected.
 
 4. **Get JSON Data Link**:
    
