@@ -13,7 +13,7 @@ async function main() {
   // fs.writeFileSync(jsonFilePath, JSON.stringify(transformedData, null, 2));
   
   const csv = await converter.json2csv(transformedData);
-  const csvFilePath = path.join(__dirname, "../output/kpi.csv");
+  const csvFilePath = path.join(__dirname, "../output.csv");
   console.log(`Generating CSV file at ${csvFilePath}`);
   fs.writeFileSync(csvFilePath, csv);
 
