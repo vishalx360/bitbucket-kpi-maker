@@ -7,7 +7,6 @@ function generateBitbucketURL(params) {
 
   if (!fields || !page || !pagelen || !state || !projectUUID || !accountID) {
     console.error("ERROR: Missing required params");
-    // exit the process
     process.exit(1);
   }
 
