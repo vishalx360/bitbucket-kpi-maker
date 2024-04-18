@@ -4,7 +4,6 @@ Author : @vishalx360
 
 This tool generates CSV files for pull requests made by a single user. You can import these CSV files into Google Sheets and then copy the data into a Notion table.
 
-
 ## Usage Instructions
 
 1. **Clone the Repository**: Clone the repository to your local machine using Git.
@@ -19,22 +18,24 @@ This tool generates CSV files for pull requests made by a single user. You can i
     npm install
     ```
 
-3. **Configure Settings**: Open the `config.json` file and add the url for bitbucket pullrequest with project selected and author selected.
+3. **Configure Settings**:
+   1. Go to the [bitbucket pull request page](https://bitbucket.org/listed-inc/workspace/pull-requests) and select the project and author.
+   2. Open the `config.json` file and add the url for from the browser address bar.
 
 4. **Get JSON Data Link**:
-   
+
     - Run the command:
-      
+
       ```bash
       npm run link
       ```
-      
+
     - Copy the JSON data link generated.
 
 5. **Paste JSON Data**: Create a file named `input.json` in the root directory of the project. Paste the JSON data obtained from the previous step into this file.
 
 6. **Generate CSV File**: Run the following command to generate the CSV file.
-   
+
     ```bash
     npm start
     ```

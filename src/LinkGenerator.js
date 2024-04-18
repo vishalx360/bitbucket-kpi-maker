@@ -22,7 +22,6 @@ const accountID = decodedURL.searchParams.get("author")
 params.accountID = accountID
 params.projectUUID = projectUUID
 
-console.log(params);
 
 
 function generateBitbucketURL(params) {
@@ -47,6 +46,6 @@ function generateBitbucketURL(params) {
 }
 
 
-// const generatedURL = generateBitbucketURL(params);
-// console.log(generatedURL);
+const generatedURL = generateBitbucketURL(params);
+console.log(generatedURL);
 
