@@ -1,0 +1,14 @@
+{
+    "fields": [
+        "values.title",
+        "values.destination.branch.name",
+        "values.destination.repository.name",
+        "values.closed_on",
+        "values.links.html.href"
+    ],
+    "page": 1,
+    "pagelen": 70,
+    "state": "MERGED",
+    "projectUUID": "",
+    "accountID": ""
+}
