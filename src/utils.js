@@ -25,9 +25,12 @@ function concatDataByDate(data) {
           const existingItem = concatenatedData.find((item) => item.Date === date);
       
           if (existingItem) {
-              existingItem.Title = `${existingItem.Title}, ${title}`;
-              existingItem['Long Description'] = `${existingItem['Long Description']}, ${description}`;
-              existingItem.Reference = `${existingItem.Reference}, ${reference}`;
+              existingItem.Title = `${existingItem.Title},
+${title}`;
+              existingItem['Long Description'] = `${existingItem['Long Description']},
+${description}`;
+              existingItem.Reference = `${existingItem.Reference},
+${reference}`;
           } else {
               concatenatedData.push({
                   Date: date,
