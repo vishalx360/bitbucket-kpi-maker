@@ -18,9 +18,15 @@ This tool generates CSV files for pull requests made by a single user. You can i
     npm install
     ```
 
-3. **Configure Settings**:
+3. **Configure Env**:
    1. Go to the [bitbucket pull request page](https://bitbucket.org/listed-inc/workspace/pull-requests) and select the project and author.
-   2. Open the `config.json` file and add the url for from the browser address bar.
+   2. Copy the URL of the page.
+   3. create a `.env` file in the root directory of the project.
+   4. Add the following line to the `.env` file:
+
+      ```env
+      url=<URL>
+      ```
 
 4. **Get JSON Data Link**:
 
