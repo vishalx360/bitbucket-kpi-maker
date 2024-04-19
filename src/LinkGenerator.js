@@ -1,4 +1,9 @@
-const config = require("../config.json")
+require('dotenv').config();
+
+if (!process.env.url){
+  console.error("ERROR: Missing required params");
+  process.exit(1);
+}
 
 const params = {
   "fields": [
@@ -14,7 +19,7 @@ const params = {
   "projectUUID": "",
   "accountID": ""
 }
-const decodedURL = new URL (decodeURI(config.url))
+const decodedURL = new URL (decodeURI(process.env.url))
 
 const projectUUID = decodedURL.searchParams.get("project").split("{")[1].split("}")[0]
 const accountID = decodedURL.searchParams.get("author")

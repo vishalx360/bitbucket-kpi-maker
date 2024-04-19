@@ -4,14 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-   "link": "node src/LinkGenerator.js",
-   "start": "node src/index.js"
+    "link": "node src/LinkGenerator.js",
+    "start": "node src/index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "csv-writer": "^1.6.0",
+    "dotenv": "^16.4.5",
     "json-2-csv": "^5.5.1",
     "url-encode-decode": "^1.0.0"
   }
