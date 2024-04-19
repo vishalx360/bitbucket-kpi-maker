@@ -20,9 +20,9 @@ async function main() {
   const finalData =  concatDataByDate(newData);
 
  
-  // const jsonFilePath = path.join(__dirname, "../output/transformedData.json");
-  // console.log(`Generating JSON file at ${jsonFilePath}`);
-  // fs.writeFileSync(jsonFilePath, JSON.stringify(transformedData, null, 2));
+  const jsonFilePath = path.join(__dirname, "../output.json");
+  console.log(`Generating JSON file at ${jsonFilePath}`);
+  fs.writeFileSync(jsonFilePath, JSON.stringify(finalData, null, 2));
   
   const csv = await converter.json2csv(finalData);
   const csvFilePath = path.join(__dirname, "../output.csv");
