@@ -11,9 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "csv-writer": "^1.6.0",
     "dotenv": "^16.4.5",
     "json-2-csv": "^5.5.1",
-    "url-encode-decode": "^1.0.0"
   }
 }
